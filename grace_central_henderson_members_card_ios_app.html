@@ -251,14 +251,31 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
 }
 /* Leadership page */
 .ld-hero-centered{
-  background:linear-gradient(160deg,#0a1628 0%,#1e3a5f 55%,#0f2744 100%);border-radius:22px;padding:20px 16px 16px;
-  margin-bottom:12px;position:relative;overflow:hidden;text-align:center;display:flex;flex-direction:column;align-items:center;gap:12px
+  border-radius:22px;margin-bottom:12px;position:relative;overflow:hidden;text-align:center;
+  display:flex;flex-direction:column;align-items:center
 }
-.ld-hero-centered::before{
+#ld-hero-centered.ld-hero-centered{
+  background:linear-gradient(160deg,#0a1628 0%,#1e3a5f 55%,#0f2744 100%);padding:20px 16px 16px;gap:12px
+}
+#ld-hero-centered.ld-hero-centered::before{
   content:"";position:absolute;top:-50px;right:-50px;width:180px;height:180px;border-radius:50%;
   background:radial-gradient(circle,rgba(59,130,246,.28),transparent 70%)
 }
-.ld-hero-centered>*{position:relative;z-index:1}
+#ld-hero-centered.ld-hero-centered>*{position:relative;z-index:1}
+#ld-hero-centered .ld-av-lg{width:120px;height:120px}
+#ld-hero-centered .ld-av-lg img{
+  width:120px;height:120px;object-fit:cover;object-position:center 22%
+}
+#ld-hero-centered .ld-av-lg .home-ai-pulse{inset:-8px}
+#ld-hero-centered .ld-av-lg .home-ai-pulse2{inset:-14px}
+.ld-profile-hero.ld-hero-centered{
+  background:linear-gradient(160deg,#0a1628 0%,#1e3a5f 55%,#0f2744 100%);padding:8px 16px calc(20px + env(safe-area-inset-bottom,0));gap:12px
+}
+.ld-profile-hero.ld-hero-centered::before{
+  content:"";position:absolute;top:-50px;right:-50px;width:180px;height:180px;border-radius:50%;
+  background:radial-gradient(circle,rgba(59,130,246,.28),transparent 70%);z-index:0
+}
+.ld-profile-hero.ld-hero-centered>*{position:relative;z-index:1}
 .ld-av-lg{width:88px;height:88px;border-radius:50%;position:relative;flex-shrink:0}
 .ld-av-lg img{width:88px;height:88px;border-radius:50%;object-fit:cover;object-position:top;position:relative;z-index:2}
 .ld-av-lg .home-ai-pulse{inset:-6px}
@@ -480,7 +497,7 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
 .ld-profile-brand{display:flex;justify-content:center;width:100%;margin:4px 0 8px}
 .ld-profile-logo{height:32px;width:auto;max-width:200px;object-fit:contain;display:block}
 .ld-profile-hero.ld-hero-centered{
-  margin:0;border-radius:24px 24px 0 0;padding:8px 16px calc(20px + env(safe-area-inset-bottom,0));flex:1;min-height:0;
+  margin:0;border-radius:24px 24px 0 0;flex:1;min-height:0;
   overflow-y:auto;-webkit-overflow-scrolling:touch;position:relative
 }
 .ld-profile-hero .ld-profile-verified{font-size:10px;font-weight:700;color:rgba(255,255,255,.55);margin-top:4px}
@@ -1688,6 +1705,45 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
   inset:0;z-index:30;background:#000;flex-direction:column
 }
 .app.watch-open .tabbar-zone{display:none}
+.app.divinity-open .tabbar-zone{display:none}
+#screen-divinity.push-screen.active{
+  inset:0;z-index:35;background:#0f172a;flex-direction:column;color:#fff
+}
+.divinity-session{flex:1;min-height:0;display:flex;flex-direction:column}
+.divinity-head{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 14px 10px;flex-shrink:0;
+  background:rgba(15,23,42,.92);border-bottom:1px solid rgba(255,255,255,.08)
+}
+.divinity-head-left{display:flex;align-items:center;gap:8px;min-width:0;flex:1}
+.divinity-live-dot{width:8px;height:8px;border-radius:50%;background:#EE2B37;flex-shrink:0;box-shadow:0 0 0 4px rgba(238,43,55,.25)}
+.divinity-head-title{font-size:13px;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.divinity-head-meta{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.divinity-pill{
+  display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border-radius:999px;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);font-size:10px;font-weight:700;color:#fff
+}
+.divinity-pill.connected{background:rgba(34,197,94,.2);border-color:rgba(34,197,94,.45)}
+.divinity-pill.connected::before{content:"✓";font-size:9px}
+.divinity-timer{font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.divinity-close{
+  width:32px;height:32px;border-radius:50%;border:1.5px solid rgba(201,151,58,.65);background:rgba(15,23,42,.6);
+  color:#fff;font-size:16px;line-height:1;cursor:pointer;font-family:inherit;flex-shrink:0;display:grid;place-items:center
+}
+.divinity-body{flex:1;min-height:0;position:relative;overflow:hidden}
+#divinity-agent-frame{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000;display:block}
+.divinity-video-overlay{
+  position:absolute;inset:0;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:rgba(10,15,30,.94);padding:56px 16px 24px;opacity:1;
+  transition:opacity .4s ease;pointer-events:auto
+}
+.divinity-video-overlay.is-closing{opacity:0;pointer-events:none}
+.divinity-video-overlay.is-hidden{display:none!important;opacity:0}
+.divinity-video-close{
+  position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;
+  border:1.5px solid rgba(201,151,58,.65);background:rgba(15,23,42,.6);color:#fff;font-size:16px;
+  line-height:1;cursor:pointer;font-family:inherit;display:grid;place-items:center;z-index:6
+}
+#divinity-intro-video{width:100%;max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;background:#000}
 #screen-watch .watch-scroll{
   flex:1;overflow:auto;scrollbar-width:none;background:#000
 }
@@ -2010,7 +2066,7 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
         <div class="home-ai-wrap">
           <div class="home-ai-teaser" onclick="showScreen('leaders')">
             <div class="home-ai-teaser-av">
-              <img id="home-ai-av" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Pastor James Wilson">
+              <img id="home-ai-av" src="assets/Pastor-James-Wilson-profile.jpg" alt="Pastor James Wilson">
               <div class="home-ai-live"></div>
             </div>
             <div class="home-ai-teaser-body">
@@ -2177,14 +2233,14 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
         <div class="nav-btn" onclick="showToast('Video call with your leader')"><span data-grace-icon="watch" data-grace-size="14"></span></div>
       </div>
       <div class="scroll">
-        <div class="ld-hero-centered">
+        <div class="ld-hero-centered" id="ld-hero-centered">
           <div class="ld-profile-brand">
             <img class="ld-profile-logo" src="assets/CCC_Central_Church-invert.png" alt="Central Church iBanc" onerror="this.style.display='none'">
           </div>
           <div class="ld-av-lg">
             <span class="home-ai-pulse"></span>
             <span class="home-ai-pulse2"></span>
-            <img id="ld-leader-img" src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+            <img id="ld-leader-img" src="assets/Pastor-James-Wilson-profile.jpg" alt="">
             <span class="home-ai-live" id="ld-hero-live-dot"></span>
           </div>
           <div>
@@ -3461,6 +3517,29 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
       </div>
     </section>
 
+    <section class="push-screen" id="screen-divinity" aria-hidden="true">
+      <div class="divinity-session" id="divinity-session">
+        <div class="divinity-head">
+          <div class="divinity-head-left">
+            <span class="divinity-live-dot" aria-hidden="true"></span>
+            <span class="divinity-head-title">Conversing with <span id="divinity-session-name">James</span></span>
+          </div>
+          <div class="divinity-head-meta">
+            <span class="divinity-pill connected">Connected</span>
+            <span class="divinity-pill divinity-timer" id="divinity-timer">0:00:00</span>
+          </div>
+          <button type="button" class="divinity-close" onclick="closeDivinitySession()" aria-label="Close">×</button>
+        </div>
+        <div class="divinity-body">
+          <iframe id="divinity-agent-frame" title="Divinity AI companion" allow="microphone *; camera *; autoplay *; fullscreen *; display-capture *"></iframe>
+          <div class="divinity-video-overlay is-hidden" id="divinity-video-overlay">
+            <button type="button" class="divinity-video-close" onclick="closeDivinityVideo()" aria-label="Close video">×</button>
+            <video id="divinity-intro-video" autoplay playsinline></video>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="app-drawer-backdrop" id="app-drawer-backdrop" onclick="closeAppMenu()" aria-hidden="true"></div>
     <aside class="app-drawer" id="app-drawer" aria-hidden="true" aria-label="Main navigation">
       <div class="drawer-head">
@@ -3902,7 +3981,7 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
 <script src="grace-duotone-icons.js"></script>
 <script>
 const leaders = [
-  {name:'Pastor James Wilson',title:'Senior Pastor',role:'Senior Pastor · Central Henderson · AI Companion',topic:'Prayer · Scripture · Guidance',img:'https://randomuser.me/api/portraits/men/32.jpg',greeting:'"Good morning Maya — I\'m Pastor James. What\'s on your heart today? You can speak or type — I\'m listening."',online:true,humanLive:true,bio:'Pastor James leads Central Henderson with a heart for expository preaching and pastoral care.',exp:'22 yrs ministry',hours:'24/7 AI · Live Mon–Fri 9am–6pm',languages:['English','Spanish'],specialties:['Prayer','Scripture','Guidance','Leadership'],rating:'4.9★',sessions:'1,284'},
+  {name:'Pastor James Wilson',title:'Senior Pastor',role:'Senior Pastor · Central Henderson · AI Companion',topic:'Prayer · Scripture · Guidance',img:'assets/Pastor-James-Wilson-profile.jpg',profileFrame:'assets/Pastor-James-Wilson-profile.jpg',didAvatarUrl:'https://link.divinityagi.com/james-wilson',introVideoUrl:'https://divinity-agi.s3.ca-central-1.amazonaws.com/Maya-welcome-to-Central-mp4.mp4',divinityRole:'SENIOR PASTOR',greeting:'"Good morning Maya — I\'m Pastor James. What\'s on your heart today? You can speak or type — I\'m listening."',online:true,humanLive:true,bio:'Pastor James leads Central Henderson with a heart for expository preaching and pastoral care.',exp:'22 yrs ministry',hours:'24/7 AI · Live Mon–Fri 9am–6pm',languages:['English','Spanish'],specialties:['Prayer','Scripture','Guidance','Leadership'],rating:'4.9★',sessions:'1,284'},
   {name:'Rev. Sandra Mitchell',title:'Pastoral Care Director',role:'Pastoral Care · Central Henderson · AI Companion',topic:'Care · Grief · Hospital',img:'https://randomuser.me/api/portraits/women/44.jpg',greeting:'"Hello Maya. I\'m Sandra — here for care, comfort, and support. What are you walking through today?"',online:true,humanLive:true,bio:'Rev. Mitchell oversees bereavement, hospital visits, and crisis care dispatch.',exp:'18 yrs ministry',hours:'24/7 AI · On-call care',languages:['English'],specialties:['Grief','Hospital','Crisis care','Counselling'],rating:'4.9★',sessions:'892'},
   {name:'Pastor Derek Osei',title:'Youth & Family Pastor',role:'Youth & Family · Central Henderson · AI Companion',topic:'Youth · Identity · Faith',img:'https://randomuser.me/api/portraits/men/54.jpg',greeting:'"What\'s good Maya! It\'s Pastor Derek. Talk to me — what\'s going on? Faith, life, whatever you\'ve got."',online:true,humanLive:true,bio:'Pastor Derek serves middle school through college-age students and their parents.',exp:'12 yrs ministry',hours:'24/7 AI · Evenings & weekends',languages:['English','Twi'],specialties:['Youth','Identity','Family','Campus'],rating:'4.8★',sessions:'654'},
   {name:'Sis. Priya Nair',title:"Women's Ministry Lead",role:"Women's Ministry · Central Henderson · AI Companion",topic:'Women · Mentorship · Calling',img:'https://randomuser.me/api/portraits/women/28.jpg',greeting:'"Hi Maya 🌸 I\'m Sis. Priya. This is a safe space — what\'s on your mind today, sis?"',online:false,humanLive:false,bio:'Sis. Priya leads Women of Grace and mentorship circles.',exp:'9 yrs ministry',hours:'AI 24/7 · Groups Tue evenings',languages:['English','Tamil'],specialties:['Mentorship','Calling','Women','Prayer'],rating:'4.9★',sessions:'521'},
@@ -3931,6 +4010,200 @@ let dmLeaderIdx = null;
 
 const DIVINITY_AVATAR_URL = 'https://link.divinityagi.com/Individual';
 
+var divinitySessionLeader = null;
+var divinityTimerId = null;
+var divinityTimerStart = 0;
+var divinityAgentLoadedUrl = null;
+var divinityVideoStallTimer = null;
+
+function leaderDivinityRole(l) {
+  if (!l) return '';
+  if (l.divinityRole) return l.divinityRole;
+  return (l.title || '').toUpperCase();
+}
+
+function leaderDivinityFrame(l) {
+  if (!l) return '';
+  return l.profileFrame || l.img || '';
+}
+
+function leaderDivinityUrl(l) {
+  if (!l) return DIVINITY_AVATAR_URL;
+  return l.didAvatarUrl || DIVINITY_AVATAR_URL;
+}
+
+function formatDivinityTimer(ms) {
+  var totalSec = Math.floor(ms / 1000);
+  var h = Math.floor(totalSec / 3600);
+  var m = Math.floor((totalSec % 3600) / 60);
+  var s = totalSec % 60;
+  return h + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+}
+
+function stopDivinityTimer() {
+  if (divinityTimerId) {
+    clearInterval(divinityTimerId);
+    divinityTimerId = null;
+  }
+}
+
+function startDivinityTimer() {
+  stopDivinityTimer();
+  divinityTimerStart = Date.now();
+  var timerEl = document.getElementById('divinity-timer');
+  if (timerEl) timerEl.textContent = '0:00:00';
+  divinityTimerId = setInterval(function() {
+    var el = document.getElementById('divinity-timer');
+    if (el) el.textContent = formatDivinityTimer(Date.now() - divinityTimerStart);
+  }, 1000);
+}
+
+function clearDivinityVideoTimers() {
+  if (divinityVideoStallTimer) {
+    clearTimeout(divinityVideoStallTimer);
+    divinityVideoStallTimer = null;
+  }
+}
+
+function loadDivinityAgent() {
+  var l = leaders[divinitySessionLeader];
+  if (!l) return;
+  var frame = document.getElementById('divinity-agent-frame');
+  if (!frame) return;
+  var url = leaderDivinityUrl(l);
+  if (divinityAgentLoadedUrl === url) return;
+  frame.src = url;
+  divinityAgentLoadedUrl = url;
+}
+
+function hideDivinityVideoOverlay() {
+  var overlay = document.getElementById('divinity-video-overlay');
+  if (!overlay || overlay.classList.contains('is-hidden')) return;
+  var done = false;
+  function finishHide(e) {
+    if (done) return;
+    if (e && e.propertyName && e.propertyName !== 'opacity') return;
+    done = true;
+    overlay.removeEventListener('transitionend', finishHide);
+    overlay.classList.remove('is-closing');
+    overlay.classList.add('is-hidden');
+  }
+  overlay.classList.add('is-closing');
+  overlay.addEventListener('transitionend', finishHide);
+  setTimeout(finishHide, 450);
+}
+
+function revealDivinityAgent() {
+  clearDivinityVideoTimers();
+  var video = document.getElementById('divinity-intro-video');
+  if (video) {
+    video.pause();
+    video.currentTime = 0;
+  }
+  loadDivinityAgent();
+  hideDivinityVideoOverlay();
+}
+
+function resetDivinitySession() {
+  clearDivinityVideoTimers();
+  divinityAgentLoadedUrl = null;
+  var frame = document.getElementById('divinity-agent-frame');
+  if (frame) frame.src = 'about:blank';
+  var overlay = document.getElementById('divinity-video-overlay');
+  var video = document.getElementById('divinity-intro-video');
+  if (overlay) {
+    overlay.classList.remove('is-closing');
+    overlay.classList.add('is-hidden');
+  }
+  if (video) {
+    video.pause();
+    video.removeAttribute('src');
+    video.load();
+  }
+}
+
+function showDivinityIntroVideo(url) {
+  var overlay = document.getElementById('divinity-video-overlay');
+  var video = document.getElementById('divinity-intro-video');
+  if (!overlay || !video || !url) {
+    revealDivinityAgent();
+    return;
+  }
+  clearDivinityVideoTimers();
+  overlay.classList.remove('is-hidden', 'is-closing');
+  video.muted = false;
+  video.src = url;
+  video.load();
+
+  var introDone = false;
+  function finishIntro() {
+    if (introDone) return;
+    introDone = true;
+    video.removeEventListener('ended', finishIntro);
+    video.removeEventListener('error', finishIntro);
+    revealDivinityAgent();
+  }
+  video.addEventListener('ended', finishIntro);
+  video.addEventListener('error', finishIntro);
+
+  video.addEventListener('playing', function clearStall() {
+    clearDivinityVideoTimers();
+    video.removeEventListener('playing', clearStall);
+  });
+
+  divinityVideoStallTimer = setTimeout(function() {
+    if (!overlay.classList.contains('is-hidden') && (video.paused || video.readyState < 2)) {
+      finishIntro();
+    }
+  }, 8000);
+
+  var playPromise = video.play();
+  if (playPromise && playPromise.catch) {
+    playPromise.catch(function() {
+      video.muted = true;
+      video.play().catch(function() {
+        finishIntro();
+      });
+    });
+  }
+}
+
+function closeDivinityVideo() {
+  revealDivinityAgent();
+}
+
+function openDivinityAvatar(idx) {
+  var i = idx !== null && idx !== undefined ? idx : currentLeader;
+  var l = leaders[i];
+  if (!l) return;
+  closeAppMenu();
+  closeLeaderProfile();
+  divinitySessionLeader = i;
+  var fn = leaderFirstName(l.name);
+  var sessionNameEl = document.getElementById('divinity-session-name');
+  if (sessionNameEl) sessionNameEl.textContent = fn;
+  resetDivinitySession();
+  stopDivinityTimer();
+  startDivinityTimer();
+  document.getElementById('screen-divinity')?.classList.add('active');
+  document.getElementById('screen-divinity')?.setAttribute('aria-hidden', 'false');
+  document.querySelector('.app')?.classList.add('divinity-open');
+  loadDivinityAgent();
+  if (l.introVideoUrl) {
+    showDivinityIntroVideo(l.introVideoUrl);
+  }
+}
+
+function closeDivinitySession(silent) {
+  stopDivinityTimer();
+  resetDivinitySession();
+  document.getElementById('screen-divinity')?.classList.remove('active');
+  document.getElementById('screen-divinity')?.setAttribute('aria-hidden', 'true');
+  document.querySelector('.app')?.classList.remove('divinity-open');
+  divinitySessionLeader = null;
+  if (!silent) showToast('Returned to app');
+}
+
 function isLeaderHumanLive(l) {
   return !!(l && l.humanLive);
 }
@@ -3946,14 +4219,6 @@ function getLeaderReachable(l) {
   if (override === '1') return true;
   if (override === '0') return false;
   return isLeaderHumanLive(l);
-}
-
-function openDivinityAvatar(idx) {
-  var i = idx !== null && idx !== undefined ? idx : currentLeader;
-  var l = leaders[i];
-  var url = (l && l.didAvatarUrl) || DIVINITY_AVATAR_URL;
-  window.open(url, '_blank', 'noopener,noreferrer');
-  showToast('Opening D-iD Avatar…');
 }
 
 function syncHeroLiveDot(dotId, l) {
@@ -4549,8 +4814,11 @@ function openPush(name) {
 }
 
 function closePush(silent) {
+  if (document.getElementById('screen-divinity')?.classList.contains('active')) {
+    closeDivinitySession(true);
+  }
   document.querySelectorAll('.push-screen').forEach(el => el.classList.remove('active'));
-  document.querySelector('.app')?.classList.remove('watch-open');
+  document.querySelector('.app')?.classList.remove('watch-open', 'divinity-open');
   stopWatchLiveDemo();
   if (!silent) showToast('Returned to app');
 }
