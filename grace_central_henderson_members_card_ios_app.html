@@ -1924,6 +1924,148 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
   width:100%;padding:9px 12px;border:none;border-radius:10px;background:#EE2B37;color:#fff;font-size:11px;font-weight:700;
   cursor:pointer;font-family:inherit
 }
+
+/* === Desktop parity (Central iOS) === */
+.home-hero-metrics{grid-template-columns:repeat(2,1fr)}
+.dash-mod{background:#fff;border:1px solid #ece8e1;border-radius:14px;margin-bottom:12px;overflow:hidden}
+.dash-mod-head{display:flex;align-items:center;justify-content:space-between;padding:12px 14px 8px;border-bottom:1px solid #f3f0eb}
+.dash-mod-title{font-size:13px;font-weight:700;color:#1a1a1a}
+.dash-mod-sub{font-size:10px;color:#aaa}
+.dash-pillars{display:flex;gap:10px;padding:0 14px 14px;overflow-x:auto;scrollbar-width:none}
+.dash-pillars::-webkit-scrollbar{display:none}
+.dash-pillar{flex:0 0 118px;background:#faf8f5;border:1px solid #ece8e1;border-radius:12px;padding:12px 10px;text-align:center;cursor:pointer}
+.dash-pillar-letter{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#000,#111);color:#EE2B37;display:flex;align-items:center;justify-content:center;margin:0 auto 8px}
+.dash-pillar-name{font-size:11px;font-weight:700;color:#1a1a1a;margin-bottom:3px}
+.dash-pillar-sub{font-size:9px;color:#888;line-height:1.35}
+.dash-pillar-badge{font-size:8px;font-weight:700;padding:2px 6px;border-radius:8px;margin-top:6px;display:inline-block;background:#FFF0F1;color:#000}
+.home-wallet-card{margin-bottom:12px}
+.home-wallet-bal{font-size:26px;font-weight:800;color:#1a1a1a;line-height:1.1}
+.home-wallet-lbl{font-size:10px;color:#888;margin-bottom:4px}
+.home-wallet-delta{font-size:10px;font-weight:600;color:#15803d;background:#dcfce7;padding:3px 8px;border-radius:8px;display:inline-block}
+.home-wallet-actions{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
+.home-wallet-act{padding:8px 4px;border-radius:10px;border:1px solid #ece8e1;background:#faf8f5;font-size:10px;font-weight:700;cursor:pointer;font-family:inherit}
+.home-wallet-act--primary{background:#000;color:#fff;border-color:#000}
+.home-giving-impact{margin-bottom:12px}
+.home-giving-impact-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:10px}
+.home-giving-impact-title{font-size:14px;font-weight:700}
+.home-giving-impact-sub{font-size:10px;color:#aaa;margin-top:2px}
+.home-giving-impact-link{font-size:10px;font-weight:700;color:#EE2B37;border:none;background:none;cursor:pointer;font-family:inherit;padding:0}
+.home-gi-kpi-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.home-gi-kpi{background:#f7f5f2;border:1px solid #ece8e1;border-radius:10px;padding:10px 12px}
+.home-gi-kpi-val{font-size:18px;font-weight:800;line-height:1.1}
+.home-gi-kpi-key{font-size:9px;color:#888;margin-top:3px}
+.home-gi-partner{font-size:10px;font-weight:600;color:#555;background:#fff8f8;border:1px solid #f5c2c6;border-radius:8px;padding:7px 10px;margin-bottom:10px;text-align:center}
+.home-gi-alloc-head{font-size:9px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.4px;margin-bottom:6px}
+.home-gi-alloc-row{display:flex;align-items:flex-start;gap:8px;margin-bottom:6px}
+.home-gi-alloc-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;margin-top:4px}
+.home-gi-alloc-body{flex:1;min-width:0}
+.home-gi-alloc-top{display:flex;justify-content:space-between;gap:6px;font-size:10px;margin-bottom:3px}
+.home-gi-alloc-top span:first-child{font-weight:600}
+.home-gi-alloc-top span:last-child{font-weight:700;color:#888}
+.home-gi-alloc-bar{background:#f3f0eb;border-radius:4px;height:4px;overflow:hidden}
+.home-gi-alloc-fill{height:100%;border-radius:4px}
+.home-gi-cta{width:100%;margin-top:10px;padding:9px;border-radius:10px;background:#f7f5f2;border:1px solid #e8e0d5;font-size:10px;font-weight:700;color:#EE2B37;cursor:pointer;font-family:inherit}
+.cr-hero{background:linear-gradient(135deg,#000,#111);border-radius:16px;padding:16px;margin-bottom:12px;position:relative;overflow:hidden}
+.cr-hero-live{font-size:9px;font-weight:700;color:#16a34a;text-transform:uppercase;letter-spacing:.4px;display:flex;align-items:center;gap:5px;margin-bottom:6px}
+.cr-hero-live i{width:6px;height:6px;border-radius:50%;background:#16a34a;display:block}
+.cr-hero h2{font-size:18px;font-weight:800;color:#fff;margin:0}
+.cr-hero p{font-size:11px;color:rgba(255,255,255,.55);margin:4px 0 0;line-height:1.45}
+.cr-hero-leader{text-align:right;font-size:10px;color:rgba(255,255,255,.5);margin-top:10px}
+.cr-hero-leader strong{color:#EE2B37;display:block;font-size:12px}
+.care-option{display:flex;align-items:center;gap:12px;padding:12px 14px;border-bottom:1px solid #f3f0eb;cursor:pointer}
+.care-option:last-child{border-bottom:none}
+.care-option--crisis{background:#fff8f8}
+.co-ico{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px}
+.co-name{font-size:12px;font-weight:700;color:#1a1a1a}
+.co-sub{font-size:10px;color:#888;margin-top:2px;line-height:1.35}
+.co-arrow{color:#ccc;font-size:18px;margin-left:auto}
+.cr-req-row{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid #f3f0eb}
+.cr-req-row:last-child{border-bottom:none}
+.cr-req-ico{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.cr-req-status{font-size:9px;font-weight:700;padding:2px 8px;border-radius:8px;background:#dcfce7;color:#15803d;white-space:nowrap}
+.cr-blessing{background:#faf8f5;border:1px solid #ece8e1;border-radius:14px;padding:14px;margin-bottom:12px}
+.cr-blessing-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.cr-blessing-av{width:40px;height:40px;border-radius:50%;object-fit:cover}
+.cr-blessing-who{font-size:11px;font-weight:700}
+.cr-blessing-role{font-size:9px;color:#888}
+.cr-blessing-live{margin-left:auto;font-size:9px;font-weight:700;color:#15803d;background:#dcfce7;padding:3px 8px;border-radius:8px}
+.cr-blessing-text{font-size:11px;color:#555;line-height:1.5;margin-bottom:10px}
+.cr-blessing-actions{display:flex;gap:8px}
+.cr-ba-btn{flex:1;padding:9px;border-radius:10px;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit;border:1px solid #ece8e1;background:#fff}
+.cr-ba-primary{background:#000;color:#fff;border-color:#000}
+.cr-dispatch-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid #f3f0eb}
+.cr-dispatch-cell{padding:12px;border-bottom:1px solid #f3f0eb;border-right:1px solid #f3f0eb}
+.cr-dispatch-cell:nth-child(2n){border-right:none}
+.cr-dispatch-title{font-size:10px;font-weight:700;margin-bottom:2px}
+.cr-dispatch-sub{font-size:9px;color:#888;margin-bottom:5px;line-height:1.35}
+.cr-dispatch-badge{font-size:8px;font-weight:700;padding:2px 7px;border-radius:8px;display:inline-block;background:#dcfce7;color:#15803d}
+.cr-dispatch-badge--standby{background:#fef9c3;color:#a16207}
+.cr-dispatch-badge--crisis{background:#fee2e2;color:#991b1b}
+.res-hero{border-radius:16px;margin-bottom:12px;position:relative;overflow:hidden;min-height:200px}
+.res-hero-slides{position:absolute;inset:0;z-index:0}
+.res-hero-slide{position:absolute;inset:0;background:center/cover no-repeat;opacity:0;transition:opacity 1.4s ease-in-out}
+.res-hero-slide.active{opacity:1}
+.res-hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(0,0,0,.78),rgba(0,0,0,.55));pointer-events:none}
+.res-hero-content{position:relative;z-index:2;padding:16px}
+.res-hero-dots{position:absolute;bottom:10px;right:12px;z-index:3;display:flex;gap:5px}
+.res-hero-dot{width:6px;height:6px;border-radius:50%;border:none;padding:0;background:rgba(255,255,255,.35);cursor:pointer}
+.res-hero-dot.active{background:#EE2B37}
+.res-hero-caption{position:absolute;bottom:10px;left:12px;z-index:3;font-size:9px;font-weight:600;color:rgba(255,255,255,.5)}
+.gv-cs-row{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.gv-cs-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.gv-cs-name{flex:1;font-size:11px;font-weight:600}
+.gv-cs-slider{flex:1;max-width:120px}
+.gv-cs-pct{font-size:11px;font-weight:700;color:#888;width:32px;text-align:right}
+.gv-cs-save{width:100%;padding:10px;border:none;border-radius:10px;background:#000;color:#fff;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit;margin-top:4px}
+.gv-pf-calc{display:none;border-top:1px solid #f3f0eb;padding:14px}
+.gv-pf-calc.show{display:block}
+.gv-calc-title{font-size:12px;font-weight:700;margin-bottom:10px}
+.gv-calc-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.gv-calc-input{width:100px;border:1px solid #e8e0d5;border-radius:8px;padding:8px;font-size:13px;font-family:inherit}
+.gv-calc-result{display:flex;align-items:center;justify-content:space-between;background:#f7f5f2;border-radius:10px;padding:10px 12px;margin-bottom:10px}
+.gv-calc-result-val{font-size:18px;font-weight:800;color:#15803d}
+.gv-calc-sim{width:100%;padding:10px;border:none;border-radius:10px;background:#EE2B37;color:#fff;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit}
+.give-wallet-panel{display:none;padding:0 12px 8px}
+.give-wallet-panel.open{display:block}
+.give-wallet-panel label{display:block;font-size:10px;font-weight:600;color:#888;margin-bottom:4px}
+.give-wallet-panel input{width:100%;border:1px solid #e8e0d5;border-radius:10px;padding:10px;font-size:13px;font-family:inherit;margin-bottom:8px}
+.give-wallet-panel-actions{display:flex;gap:8px;margin-bottom:8px}
+.give-wallet-panel-actions button{flex:1;padding:9px;border-radius:10px;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit;border:1px solid #ece8e1;background:#faf8f5}
+.give-wallet-panel-actions button.primary{background:#000;color:#fff;border-color:#000}
+.ld-kpi-strip{display:flex;gap:8px;justify-content:center;margin:10px 0 4px;flex-wrap:wrap}
+.ld-kpi-item{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:8px 12px;text-align:center;min-width:88px}
+.ld-kpi-item strong{display:block;font-size:12px;font-weight:800;color:#fff}
+.ld-kpi-item span{font-size:8px;color:rgba(255,255,255,.6);margin-top:2px;display:block}
+.ld-hero-dm-row{display:flex;gap:8px;width:100%;max-width:300px;margin-top:8px}
+.ld-hero-dm{flex:1;padding:10px;border-radius:12px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.12);color:#fff;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit}
+.cn-post-overlay{position:fixed;inset:0;z-index:400;background:rgba(0,0,0,.45);display:flex;align-items:flex-end;justify-content:center;opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
+.cn-post-overlay.open{opacity:1;visibility:visible}
+.cn-post-modal{background:#fff;border-radius:18px 18px 0 0;width:100%;max-width:430px;max-height:85vh;overflow-y:auto;padding:16px}
+.cn-pm-types{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.cn-pm-type{padding:6px 10px;border-radius:20px;border:1px solid #ece8e1;font-size:10px;font-weight:600;cursor:pointer;background:#faf8f5}
+.cn-pm-type.selected{border-color:#EE2B37;background:#FFF0F1;color:#EE2B37}
+.cn-pm-text{width:100%;min-height:100px;border:1px solid #e8e0d5;border-radius:12px;padding:12px;font-size:13px;font-family:inherit;resize:vertical}
+.cn-pm-submit{width:100%;padding:12px;border:none;border-radius:12px;background:#000;color:#fff;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;margin-top:10px}
+.cn-comment-area{display:none;padding:8px 14px 12px;border-top:1px solid #f3f0eb}
+.cn-comment-area.open{display:block}
+.cn-comment-row{display:flex;gap:8px;align-items:center}
+.cn-comment-av{width:28px;height:28px;border-radius:50%;object-fit:cover}
+.cn-comment-input{flex:1;border:1px solid #e8e0d5;border-radius:20px;padding:8px 12px;font-size:12px;font-family:inherit}
+.cn-comment-item{display:flex;gap:8px;margin-top:8px;font-size:11px;line-height:1.4}
+.guidelines-overlay{position:fixed;inset:0;z-index:410;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s}
+.guidelines-overlay.open{opacity:1;visibility:visible}
+.guidelines-card{background:#fff;border-radius:16px;padding:18px;max-width:340px;width:100%;max-height:80vh;overflow-y:auto}
+.guidelines-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.guidelines-title{font-size:15px;font-weight:800}
+.guidelines-row{display:flex;gap:10px;font-size:12px;color:#555;line-height:1.45;margin-bottom:12px}
+.guidelines-row b{color:#1a1a1a}
+.jy-study-banner{background:linear-gradient(135deg,#faf8f5,#fff);border:1px solid #ece8e1;border-radius:14px;padding:14px;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.jy-study-topics{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.jy-study-chip{padding:6px 10px;border-radius:20px;border:1px solid #ece8e1;font-size:10px;font-weight:600;cursor:pointer;background:#faf8f5}
+.jy-study-path{padding:10px 0;border-bottom:1px solid #f3f0eb;font-size:11px}
+.jy-study-path:last-child{border-bottom:none}
+.watch-study-banner{background:#faf8f5;border:1px solid #ece8e1;border-radius:14px;padding:14px;margin:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.watch-study-banner button{padding:8px 12px;border:none;border-radius:10px;background:#000;color:#fff;font-size:10px;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap}
 .drawer-divider{height:1px;background:rgba(255,255,255,.12);margin:8px 4px}
 .drawer-signout{color:rgba(255,255,255,.75)}
 .landing-screen{
@@ -2026,11 +2168,12 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
             <div class="home-metric"><strong id="hero-impact">$18.42</strong><span>Card impact · routed this month</span></div>
             <div class="home-metric"><strong id="hero-commitment">Partner</strong><span>Giving rhythm · 6%</span></div>
             <div class="home-metric"><strong id="hero-lives">23</strong><span>Lives impacted through church causes</span></div>
+            <div class="home-metric"><strong id="hero-direct-gifts">$230</strong><span>Direct gifts · May</span></div>
           </div>
         </div>
 
         <div class="daily-loop">
-          <div class="daily-item" onclick="showScreen('leaders')">
+          <div class="daily-item" onclick="showScreen('care')">
             <div class="daily-time">☀ Morning</div>
             <div class="daily-action">Pastoral care</div>
             <div class="daily-status done">✓ Blessing read</div>
@@ -2061,6 +2204,46 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
           <button type="button" class="home-action" onclick="homeQuickCmd('prayer')"><span data-grace-icon="prayer" data-grace-size="18"></span>Prayer</button>
           <button type="button" class="home-action" onclick="homeQuickCmd('watch')"><span data-grace-icon="watch" data-grace-size="18"></span>Watch</button>
           <button type="button" class="home-action" onclick="openHomeMoreSheet()"><span class="home-action-dots" aria-hidden="true">···</span>More</button>
+        </div>
+
+
+        <div class="dash-mod">
+          <div class="dash-mod-head">
+            <div class="dash-mod-title">GRACE at Central</div>
+            <span class="dash-mod-sub">Journey · Impact · Care</span>
+          </div>
+          <div class="dash-pillars">
+            <div class="dash-pillar" onclick="showScreen('profile')">
+              <div class="dash-pillar-letter"><span data-grace-icon="profile" data-grace-size="16" data-grace-variant="inverse"></span></div>
+              <div class="dash-pillar-name">Journey</div>
+              <div class="dash-pillar-sub">Journal · goals</div>
+              <span class="dash-pillar-badge" id="dash-journey-badge">7 reflection days</span>
+            </div>
+            <div class="dash-pillar" onclick="showScreen('give');walletTabGive('impact')">
+              <div class="dash-pillar-letter"><span data-grace-icon="impact" data-grace-size="16" data-grace-variant="inverse"></span></div>
+              <div class="dash-pillar-name">Impact</div>
+              <div class="dash-pillar-sub">Card impact · routing</div>
+              <span class="dash-pillar-badge" id="dash-pillar-impact-badge">$18.42 · May</span>
+            </div>
+            <div class="dash-pillar" onclick="showScreen('care')">
+              <div class="dash-pillar-letter"><span data-grace-icon="prayer" data-grace-size="16" data-grace-variant="inverse"></span></div>
+              <div class="dash-pillar-name">Care</div>
+              <div class="dash-pillar-sub">Leadership · support</div>
+              <span class="dash-pillar-badge" id="dash-pillar-care-badge">24/7 available</span>
+            </div>
+            <div class="dash-pillar" onclick="showScreen('give')">
+              <div class="dash-pillar-letter"><span data-grace-icon="give" data-grace-size="16" data-grace-variant="inverse"></span></div>
+              <div class="dash-pillar-name">Giving</div>
+              <div class="dash-pillar-sub">Give · tithe</div>
+              <span class="dash-pillar-badge" id="dash-pillar-giving-badge">$230 · May</span>
+            </div>
+            <div class="dash-pillar" onclick="showScreen('community')">
+              <div class="dash-pillar-letter"><span data-grace-icon="people" data-grace-size="16" data-grace-variant="inverse"></span></div>
+              <div class="dash-pillar-name">Connect</div>
+              <div class="dash-pillar-sub">Groups · events</div>
+              <span class="dash-pillar-badge" id="dash-pillar-connect-badge">5 updates</span>
+            </div>
+          </div>
         </div>
 
         <div class="home-ai-wrap">
@@ -2131,6 +2314,47 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
             </div>
             <div class="mc-flip-hint">Tap card to view details</div>
             <div class="home-card-route">Current route: <strong id="home-route-label">Food Pantry</strong></div>
+          </div>
+        </div>
+
+
+        <div class="card home-wallet-card">
+          <div class="section-head">
+            <div><h3>Account</h3><span style="font-size:10px;color:var(--ios-muted)">GRACE Card ···· 1834</span></div>
+            <div class="linkish" onclick="openGiveWalletSheet()">Manage →</div>
+          </div>
+          <div style="padding:0 14px 14px">
+            <div class="home-wallet-lbl">Available balance</div>
+            <div class="home-wallet-bal">$<span id="home-wallet-available">3,240</span>.00</div>
+            <div style="margin-top:8px"><span class="home-wallet-delta" id="home-wallet-delta">↑ $18.42 Card impact · May</span></div>
+            <div class="home-wallet-actions">
+              <button type="button" class="home-wallet-act home-wallet-act--primary" onclick="openGiveWalletTransfer('send')">Send</button>
+              <button type="button" class="home-wallet-act home-wallet-act--primary" onclick="openGiveWalletTransfer('receive')">Receive</button>
+              <button type="button" class="home-wallet-act" onclick="showScreen('give')">Give</button>
+              <button type="button" class="home-wallet-act" onclick="showScreen('give');walletTabGive('assets')">Open card</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card home-giving-impact" id="home-giving-impact">
+          <div style="padding:14px 14px 0">
+            <div class="home-giving-impact-head">
+              <div>
+                <div class="home-giving-impact-title">Giving Impact Summary</div>
+                <div class="home-giving-impact-sub">Card impact &amp; giving routing</div>
+              </div>
+              <button type="button" class="home-giving-impact-link" onclick="showScreen('give');walletTabGive('impact')">View impact →</button>
+            </div>
+          </div>
+          <div style="padding:12px 14px 14px">
+            <div class="home-gi-kpi-row">
+              <div class="home-gi-kpi"><div class="home-gi-kpi-val" id="home-gi-total">$18.42</div><div class="home-gi-kpi-key">Card impact · May</div></div>
+              <div class="home-gi-kpi"><div class="home-gi-kpi-val" id="home-gi-lives">23</div><div class="home-gi-kpi-key">Lives impacted</div></div>
+            </div>
+            <div class="home-gi-partner" id="home-gi-partner">Partner · 6% · Giving goal progress</div>
+            <div class="home-gi-alloc-head">Impact allocation</div>
+            <div id="home-gi-alloc-list"></div>
+            <button type="button" class="home-gi-cta" onclick="showScreen('give');walletTabGive('impact');scrollGiveAnchor('gv-alloc-card')">Review allocation →</button>
           </div>
         </div>
 
@@ -2251,6 +2475,14 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
           <div class="home-ai-wave" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
           <p class="home-ai-greeting" id="ld-leader-greeting" style="color:rgba(255,255,255,.82);font-size:12px;line-height:1.55;max-width:300px;margin:0">Grace is here for prayer, guidance, and next steps. A real leader can follow up when care is needed.</p>
           <p class="ld-trust-line" style="color:rgba(255,255,255,.55);font-size:10px;line-height:1.45;max-width:300px;margin:6px 0 0">Grace does not replace pastors, counselors, or emergency support.</p>
+          <div class="ld-kpi-strip" role="group" aria-label="Leadership summary">
+            <div class="ld-kpi-item"><strong id="leader-kpi-active">Pastor James</strong><span>Active leader</span></div>
+            <div class="ld-kpi-item"><strong id="leader-kpi-verified">5</strong><span>Verified leaders</span></div>
+            <div class="ld-kpi-item"><strong id="leader-kpi-participation">4</strong><span>Participation · week</span></div>
+          </div>
+          <div class="ld-hero-dm-row">
+            <button type="button" class="ld-hero-dm" onclick="startLeaderDirectMessage(currentLeader)">Send a DM</button>
+          </div>
           <button type="button" class="ld-begin" onclick="openDivinityAvatar(currentLeader)">Begin a Conversation</button>
           <button type="button" class="ld-switch-ghost" onclick="scrollToLeaderRoster()">Switch Leader ›</button>
         </div>
@@ -2376,21 +2608,33 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
       </div>
       <div class="scroll">
         <div class="gv-panel active" id="gv-panel-assets">
-          <div class="gv-hero gv-hero--slim">
-            <div class="gv-hero-overlay">
-              <div class="gv-hero-brand">
-                <img class="gv-hero-logo" src="assets/CCC_Central_Church-invert.png" alt="Central Church iBanc" onerror="this.style.display='none'">
+          <div class="res-hero" id="res-hero">
+            <div class="res-hero-slides" aria-hidden="true">
+              <div class="res-hero-slide active" data-caption="Card impact · GRACE Card" style="background-image:url('assets/wallet-hero/smiling-shopping.jpg')"></div>
+              <div class="res-hero-slide" data-caption="Serving together · local impact" style="background-image:url('assets/wallet-hero/smiling-community.jpg')"></div>
+              <div class="res-hero-slide" data-caption="Joy in community · Central Henderson" style="background-image:url('assets/wallet-hero/smiling-volunteers.jpg')"></div>
+            </div>
+            <div class="res-hero-overlay"></div>
+            <div class="res-hero-content">
+              <div class="gv-hero-brand" style="margin-bottom:8px">
+                <img class="gv-hero-logo" src="assets/CCC_Central_Church-invert.png" alt="Central Church iBanc" onerror="this.style.display='none'" style="height:28px">
               </div>
-              <p class="gv-hero-tagline">Qualified purchases can create impact for Central.</p>
+              <p style="font-size:11px;color:rgba(255,255,255,.65);margin:0 0 12px;line-height:1.45">Give directly, or route your GRACE Card impact. Qualified purchases can create impact for Central.</p>
               <div class="gv-kpi-grid gv-kpi-grid--3">
-                <div class="gv-kpi"><strong id="gv-wallet">$3,240</strong><span>Wallet available</span></div>
-                <div class="gv-kpi"><strong id="give-impact">$18.42</strong><span>Card impact · May</span></div>
-                <div class="gv-kpi"><strong id="gv-given-ytd">$1,240</strong><span>Given · YTD</span><em id="gv-given-month">$230 this month</em></div>
+                <div class="gv-kpi"><strong id="gv-wallet" style="color:#fff">$3,240</strong><span style="color:rgba(255,255,255,.6)">Wallet available</span></div>
+                <div class="gv-kpi"><strong id="give-impact" style="color:#fff">$18.42</strong><span style="color:rgba(255,255,255,.6)">Card impact · May</span></div>
+                <div class="gv-kpi"><strong id="gv-given-ytd" style="color:#fff">$1,240</strong><span style="color:rgba(255,255,255,.6)">Given · YTD</span><em id="gv-given-month" style="color:rgba(255,255,255,.5)">$230 this month</em></div>
               </div>
-              <div class="gv-route-bar">
-                <span>Impact allocation → <strong id="give-route-label">Food Pantry</strong></span>
+              <div class="gv-route-bar" style="margin-top:10px">
+                <span style="color:rgba(255,255,255,.75)">Impact allocation → <strong id="give-route-label" style="color:#fff">Food Pantry</strong></span>
                 <button type="button" onclick="walletTabGive('impact');scrollGiveAnchor('gv-alloc-card')">Change routing</button>
               </div>
+            </div>
+            <span class="res-hero-caption" id="res-hero-caption">Card impact · GRACE Card</span>
+            <div class="res-hero-dots" id="res-hero-dots" role="tablist" aria-label="Hero slides">
+              <button type="button" class="res-hero-dot active" aria-label="Slide 1" onclick="resHeroGo(0)"></button>
+              <button type="button" class="res-hero-dot" aria-label="Slide 2" onclick="resHeroGo(1)"></button>
+              <button type="button" class="res-hero-dot" aria-label="Slide 3" onclick="resHeroGo(2)"></button>
             </div>
           </div>
 
@@ -2556,7 +2800,7 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
           <div class="gv-card-block" id="gv-alloc-card">
             <div class="gv-card-head">
               <strong>Your Impact Allocation</strong>
-              <button type="button" class="linkish" style="border:none;background:none;padding:0;cursor:pointer;font-size:11px" onclick="showToast('Edit allocation sliders')">Edit allocation →</button>
+              <button type="button" class="linkish" style="border:none;background:none;padding:0;cursor:pointer;font-size:11px" onclick="toggleGvAllocEdit()">Edit allocation →</button>
             </div>
             <div class="gv-alloc-wrap">
               <div class="gv-donut">
@@ -2566,6 +2810,16 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
                 <div class="gv-donut-center"><strong id="gv-donut-val">$18.42</strong><span>Impact · May</span></div>
               </div>
               <div class="gv-alloc-list" id="impact-allocation"></div>
+            </div>
+
+            <div id="gv-cause-edit" style="display:none;border-top:1px solid #f3f0eb;padding:14px">
+              <div style="font-size:10px;font-weight:600;color:#555;margin-bottom:10px">Adjust allocation — must total 100%</div>
+              <div class="gv-cs-row"><div class="gv-cs-dot" style="background:#EE2B37"></div><div class="gv-cs-name">Missions Fund</div><input type="range" class="gv-cs-slider" min="0" max="100" value="40" oninput="gvUpdateAlloc(this,0)"><div class="gv-cs-pct" id="gv-cs-0">40%</div></div>
+              <div class="gv-cs-row"><div class="gv-cs-dot" style="background:#000"></div><div class="gv-cs-name">Building Fund</div><input type="range" class="gv-cs-slider" min="0" max="100" value="25" oninput="gvUpdateAlloc(this,1)"><div class="gv-cs-pct" id="gv-cs-1">25%</div></div>
+              <div class="gv-cs-row"><div class="gv-cs-dot" style="background:#7c3aed"></div><div class="gv-cs-name">Youth Ministry</div><input type="range" class="gv-cs-slider" min="0" max="100" value="20" oninput="gvUpdateAlloc(this,2)"><div class="gv-cs-pct" id="gv-cs-2">20%</div></div>
+              <div class="gv-cs-row"><div class="gv-cs-dot" style="background:#16a34a"></div><div class="gv-cs-name">Food Pantry</div><input type="range" class="gv-cs-slider" min="0" max="100" value="10" oninput="gvUpdateAlloc(this,3)"><div class="gv-cs-pct" id="gv-cs-3">10%</div></div>
+              <div class="gv-cs-row"><div class="gv-cs-dot" style="background:#0891b2"></div><div class="gv-cs-name">Care Fund</div><input type="range" class="gv-cs-slider" min="0" max="100" value="5" oninput="gvUpdateAlloc(this,4)"><div class="gv-cs-pct" id="gv-cs-4">5%</div></div>
+              <button type="button" class="gv-cs-save" onclick="gvSaveAlloc()">Save allocation</button>
             </div>
           </div>
 
@@ -2630,21 +2884,88 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
               <span class="gv-status">GRACE Pay Active</span>
             </div>
             <div class="gv-merchant-compact">
-              <div class="gv-mc-compact" onclick="showToast('Walmart → Food Pantry · 2.0%')"><span class="gv-mc-tog on" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">🛒</div><div class="gv-mc-store">Walmart</div><div class="gv-mc-pct">2.0%</div></div>
-              <div class="gv-mc-compact" onclick="showToast('Shell → Missions · 1.5%')"><span class="gv-mc-tog on" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">⛽</div><div class="gv-mc-store">Shell</div><div class="gv-mc-pct">1.5%</div></div>
-              <div class="gv-mc-compact" onclick="showToast('Amazon → Building · 1.0%')"><span class="gv-mc-tog on" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">📦</div><div class="gv-mc-store">Amazon</div><div class="gv-mc-pct">1.0%</div></div>
-              <div class="gv-mc-compact" onclick="showToast('Dining → Youth · 2.0%')"><span class="gv-mc-tog on" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">🍔</div><div class="gv-mc-store">Dining</div><div class="gv-mc-pct">2.0%</div></div>
-              <div class="gv-mc-compact" onclick="showToast('Travel → Missions · 3.0%')"><span class="gv-mc-tog" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">✈️</div><div class="gv-mc-store">Travel</div><div class="gv-mc-pct">3.0%</div></div>
+              <div class="gv-mc-compact" onclick="gvOpenCalc(this,'Walmart','Food Pantry',2.0)"><span class="gv-mc-tog on" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">🛒</div><div class="gv-mc-store">Walmart</div><div class="gv-mc-pct">2.0%</div></div>
+              <div class="gv-mc-compact" onclick="gvOpenCalc(this,'Shell','Missions Fund',1.5)"><span class="gv-mc-tog on" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">⛽</div><div class="gv-mc-store">Shell</div><div class="gv-mc-pct">1.5%</div></div>
+              <div class="gv-mc-compact" onclick="gvOpenCalc(this,'Amazon','Building Fund',1.0)"><span class="gv-mc-tog on" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">📦</div><div class="gv-mc-store">Amazon</div><div class="gv-mc-pct">1.0%</div></div>
+              <div class="gv-mc-compact" onclick="gvOpenCalc(this,'Dining','Youth Ministry',2.0)"><span class="gv-mc-tog on" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">🍔</div><div class="gv-mc-store">Dining</div><div class="gv-mc-pct">2.0%</div></div>
+              <div class="gv-mc-compact" onclick="gvOpenCalc(this,'Travel','Missions Fund',3.0)"><span class="gv-mc-tog" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">✈️</div><div class="gv-mc-store">Travel</div><div class="gv-mc-pct">3.0%</div></div>
             </div>
             <button type="button" class="gv-merchant-manage" onclick="toggleGiveMerchantsExpand()">Manage merchants →</button>
             <div class="gv-merchant-grid gv-merchant-expand" id="gv-merchant-expand">
-              <div class="gv-mc" onclick="showToast('Walmart → Food Pantry · 2.0%')"><span class="gv-mc-tog on" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">🛒</div><div class="gv-mc-store">Walmart</div><div class="gv-mc-cause">→ Food Pantry</div><div class="gv-mc-pct">2.0%</div></div>
-              <div class="gv-mc" onclick="showToast('Shell → Missions · 1.5%')"><span class="gv-mc-tog on" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">⛽</div><div class="gv-mc-store">Shell</div><div class="gv-mc-cause">→ Missions</div><div class="gv-mc-pct">1.5%</div></div>
-              <div class="gv-mc" onclick="showToast('Amazon → Building · 1.0%')"><span class="gv-mc-tog on" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">📦</div><div class="gv-mc-store">Amazon</div><div class="gv-mc-cause">→ Building</div><div class="gv-mc-pct">1.0%</div></div>
-              <div class="gv-mc" onclick="showToast('Dining → Youth · 2.0%')"><span class="gv-mc-tog on" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">🍔</div><div class="gv-mc-store">Dining</div><div class="gv-mc-cause">→ Youth</div><div class="gv-mc-pct">2.0%</div></div>
-              <div class="gv-mc" onclick="showToast('Travel → Missions · 3.0%')"><span class="gv-mc-tog" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">✈️</div><div class="gv-mc-store">Travel</div><div class="gv-mc-cause">→ Missions</div><div class="gv-mc-pct">3.0%</div></div>
+              <div class="gv-mc gv-mc-active" onclick="gvOpenCalc(this,'Walmart','Food Pantry',2.0)"><span class="gv-mc-tog on" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">🛒</div><div class="gv-mc-store">Walmart</div><div class="gv-mc-cause">→ Food Pantry</div><div class="gv-mc-pct">2.0%</div></div>
+              <div class="gv-mc" onclick="gvOpenCalc(this,'Shell','Missions Fund',1.5)"><span class="gv-mc-tog on" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">⛽</div><div class="gv-mc-store">Shell</div><div class="gv-mc-cause">→ Missions</div><div class="gv-mc-pct">1.5%</div></div>
+              <div class="gv-mc" onclick="gvOpenCalc(this,'Amazon','Building Fund',1.0)"><span class="gv-mc-tog on" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">📦</div><div class="gv-mc-store">Amazon</div><div class="gv-mc-cause">→ Building</div><div class="gv-mc-pct">1.0%</div></div>
+              <div class="gv-mc" onclick="gvOpenCalc(this,'Dining','Youth Ministry',2.0)"><span class="gv-mc-tog on" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">🍔</div><div class="gv-mc-store">Dining</div><div class="gv-mc-cause">→ Youth</div><div class="gv-mc-pct">2.0%</div></div>
+              <div class="gv-mc" onclick="gvOpenCalc(this,'Travel','Missions Fund',3.0)"><span class="gv-mc-tog" onclick="event.stopPropagation();this.classList.toggle('on')"></span><div class="gv-mc-ico">✈️</div><div class="gv-mc-store">Travel</div><div class="gv-mc-cause">→ Missions</div><div class="gv-mc-pct">3.0%</div></div>
               <div class="gv-mc" onclick="showToast('Add merchant partner')"><div class="gv-mc-ico" style="color:#EE2B37">+</div><div class="gv-mc-store" style="color:#EE2B37">Add Merchant</div><div class="gv-mc-cause">Custom</div></div>
             </div>
+            <div class="gv-pf-calc" id="gv-pf-calc">
+              <div class="gv-calc-title" id="gv-calc-title">Walmart → Food Pantry</div>
+              <div class="gv-calc-row"><label>Purchase amount</label><input class="gv-calc-input" id="gv-calc-input" type="number" value="120" oninput="gvCalcContrib()"></div>
+              <div class="gv-calc-result"><div><div style="font-size:10px;color:#888">Cause contribution</div></div><div class="gv-calc-result-val" id="gv-calc-result">$2.40</div></div>
+              <button type="button" class="gv-calc-sim" onclick="gvSimPurchase()">Simulate this purchase</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="screen" id="screen-care">
+      <div class="home-nav home-nav--title-center">
+        <div class="home-nav-brand">
+          <button type="button" class="menu-btn" onclick="toggleAppMenu()" aria-label="Open menu"><span class="menu-btn-bars" aria-hidden="true"><span></span><span></span><span></span></span></button>
+        </div>
+        <div class="home-nav-title">24-7 Resources</div>
+        <div class="home-nav-actions">
+          <div class="home-nav-bell nav-btn" onclick="openCrisisSupport()" title="Crisis support"><span data-grace-icon="crisis" data-grace-size="16"></span></div>
+        </div>
+      </div>
+      <div class="scroll">
+        <div class="cr-hero">
+          <div class="cr-hero-live"><i></i> Available 24/7</div>
+          <h2>Pastoral care &amp; resources</h2>
+          <p>Connect with a leader · Submit care · Human follow-up available</p>
+          <div class="cr-hero-leader">Your assigned leader<strong>Pastor James Wilson</strong><span style="color:#16a34a;font-weight:600">● Online now</span></div>
+        </div>
+        <div class="card" style="margin-bottom:12px;padding:0;overflow:hidden">
+          <div class="section-head" style="padding:14px 14px 0;margin-bottom:0">
+            <div><h3>Submit a care request</h3></div>
+            <span style="font-size:9px;font-weight:700;background:#dcfce7;color:#15803d;padding:3px 8px;border-radius:8px">Human follow-up</span>
+          </div>
+          <div class="care-option" onclick="submitCareRequest('Prayer &amp; Guidance')"><div class="co-ico" style="background:#e8edf8">🙏</div><div><div class="co-name">Prayer &amp; Guidance</div><div class="co-sub">Personal prayer, scripture, spiritual guidance</div></div><div class="co-arrow">›</div></div>
+          <div class="care-option" onclick="submitCareRequest('Hospital Visitation')"><div class="co-ico" style="background:#e8f5ed">🏥</div><div><div class="co-name">Hospital Visitation</div><div class="co-sub">Request a pastoral visit — in hospital or at home</div></div><div class="co-arrow">›</div></div>
+          <div class="care-option" onclick="submitCareRequest('Grief &amp; Bereavement')"><div class="co-ico" style="background:#f5ece8">🕯️</div><div><div class="co-name">Grief &amp; Bereavement</div><div class="co-sub">Support through loss and grief counselling</div></div><div class="co-arrow">›</div></div>
+          <div class="care-option" onclick="submitCareRequest('Food Pantry')"><div class="co-ico" style="background:#f5f0e8">🍽️</div><div><div class="co-name">Food Pantry</div><div class="co-sub">Schedule a pickup — pantry open weekly</div></div><div class="co-arrow">›</div></div>
+          <div class="care-option" onclick="submitCareRequest('Counselling')"><div class="co-ico" style="background:#e8edf8">💍</div><div><div class="co-name">Pre-Marital / Counselling</div><div class="co-sub">Book a session with Minister Grace Okafor</div></div><div class="co-arrow">›</div></div>
+          <div class="care-option care-option--crisis" onclick="openCrisisSupport()"><div class="co-ico" style="background:#fee2e2">🚨</div><div><div class="co-name" style="color:#b91c1c">Crisis Support</div><div class="co-sub" style="color:#dc2626">Immediate help — connects to a leader</div></div><div class="co-arrow" style="color:#dc2626">›</div></div>
+        </div>
+        <div class="card" style="margin-bottom:12px;padding:0;overflow:hidden">
+          <div class="section-head" style="padding:14px 14px 0"><h3>My recent requests</h3></div>
+          <div class="cr-req-row"><div class="cr-req-ico" style="background:#e8edf8">🙏</div><div style="flex:1"><div style="font-size:11px;font-weight:700">Prayer — Anxiety &amp; faith</div><div style="font-size:9px;color:#888">May 26 · Resolved</div></div><span class="cr-req-status">Resolved</span></div>
+          <div class="cr-req-row"><div class="cr-req-ico" style="background:#e8f5ed">🏥</div><div style="flex:1"><div style="font-size:11px;font-weight:700">Hospital visit — Rm 214</div><div style="font-size:9px;color:#888">May 14 · Rev. Mitchell</div></div><span class="cr-req-status">Complete</span></div>
+        </div>
+        <div class="cr-blessing">
+          <div class="cr-blessing-head">
+            <img class="cr-blessing-av" src="assets/Pastor-James-Wilson-profile.jpg" alt="Pastor James Wilson">
+            <div><div class="cr-blessing-who">Pastor James Wilson</div><div class="cr-blessing-role">Your assigned leader · Grace AI with human follow-up</div></div>
+            <span class="cr-blessing-live">● Live</span>
+          </div>
+          <div class="cr-blessing-text">Grace is here for prayer, guidance, and next steps. A real leader can follow up when care is needed.</div>
+          <div class="cr-blessing-actions">
+            <button type="button" class="cr-ba-btn cr-ba-primary" onclick="openDivinityAvatar(currentLeader)">Begin a conversation</button>
+            <button type="button" class="cr-ba-btn" onclick="startLeaderDirectMessage(currentLeader)">Direct Message</button>
+          </div>
+        </div>
+        <div class="card" style="padding:0;overflow:hidden;margin-bottom:12px">
+          <div class="section-head" style="padding:14px 14px 0"><div><h3>Care Dispatch</h3><span style="font-size:10px;color:var(--ios-muted)">24-hour service routing</span></div><span style="font-size:9px;font-weight:700;background:#dcfce7;color:#15803d;padding:3px 8px;border-radius:8px">System live</span></div>
+          <div class="cr-dispatch-grid">
+            <div class="cr-dispatch-cell"><div class="cr-dispatch-title">Prayer &amp; Guidance</div><div class="cr-dispatch-sub">Routes to Pastor Wilson when needed</div><span class="cr-dispatch-badge">Live</span></div>
+            <div class="cr-dispatch-cell"><div class="cr-dispatch-title">Hospital Visitations</div><div class="cr-dispatch-sub">Rev. Sandra Mitchell</div><span class="cr-dispatch-badge">Live</span></div>
+            <div class="cr-dispatch-cell"><div class="cr-dispatch-title">Grief &amp; Bereavement</div><div class="cr-dispatch-sub">Wilson + Hayes</div><span class="cr-dispatch-badge">Live</span></div>
+            <div class="cr-dispatch-cell"><div class="cr-dispatch-title">Food Pantry</div><div class="cr-dispatch-sub">Deacon Hayes</div><span class="cr-dispatch-badge">Live</span></div>
+            <div class="cr-dispatch-cell"><div class="cr-dispatch-title">Weddings &amp; Pre-Marital</div><div class="cr-dispatch-sub">Min. Grace Okafor</div><span class="cr-dispatch-badge cr-dispatch-badge--standby">Standby</span></div>
+            <div class="cr-dispatch-cell" style="background:#fff8f8"><div class="cr-dispatch-title" style="color:#b91c1c">Crisis Support</div><div class="cr-dispatch-sub">All leaders on call</div><span class="cr-dispatch-badge cr-dispatch-badge--crisis">Priority · Always on</span></div>
           </div>
         </div>
       </div>
@@ -2703,13 +3024,13 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
           <div class="cn-composer">
             <div class="cn-composer-top">
               <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Maya">
-              <div class="cn-composer-input" onclick="showToast('Choose public, group-only, or private care')">What's on your heart today?</div>
+              <div class="cn-composer-input" onclick="openCnPostOverlay()">What's on your heart today?</div>
             </div>
             <div class="cn-composer-actions">
-              <button type="button" class="cn-comp-act" onclick="showToast('Private prayer request')">🙏 Prayer request</button>
-              <button type="button" class="cn-comp-act" onclick="showToast('Share blessing')">📖 Share blessing</button>
-              <button type="button" class="cn-comp-act" onclick="showToast('Praise report')">🙌 Praise report</button>
-              <button type="button" class="cn-comp-act" onclick="showToast('Add photo')">📷 Photo</button>
+              <button type="button" class="cn-comp-act" onclick="openCnPostOverlay('Prayer')">🙏 Prayer request</button>
+              <button type="button" class="cn-comp-act" onclick="openCnPostOverlay('Blessing')">📖 Share blessing</button>
+              <button type="button" class="cn-comp-act" onclick="openCnPostOverlay('Praise')">🙌 Praise report</button>
+              <button type="button" class="cn-comp-act" onclick="showToast('Add photo — demo')">📷 Photo</button>
             </div>
           </div>
           <div class="cn-safety-note"><strong>Share with care</strong>Choose what is public, group-only, or sent privately to pastoral care. Crisis support should always use Help now.</div>
@@ -2731,7 +3052,11 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
               <div class="cn-post-actions">
                 <button type="button" class="cn-pact" id="cn-pray-1" onclick="cnTogglePray('cn-pray-1','cn-count-1')">🙏 <span id="cn-count-1">247</span> Pray</button>
                 <button type="button" class="cn-pact" id="cn-amen-1" onclick="cnToggleAmen('cn-amen-1','cn-acount-1')">🙌 <span id="cn-acount-1">89</span> Amen</button>
-                <button type="button" class="cn-pact" onclick="showToast('Comments')">💬 24 Comment</button>
+                <button type="button" class="cn-pact" onclick="cnToggleComment('cn-cm-1')">💬 24 Comment</button>
+              <div class="cn-comment-area" id="cn-cm-1">
+                <div class="cn-comment-item"><img class="cn-comment-av" src="https://randomuser.me/api/portraits/women/29.jpg" alt=""><div><strong>Sarah J.</strong> Praying with you! 🙏</div></div>
+                <div class="cn-comment-row"><img class="cn-comment-av" src="https://randomuser.me/api/portraits/women/42.jpg" alt=""><input class="cn-comment-input" placeholder="Add a comment…" onkeydown="if(event.key==='Enter')cnAddComment(this,'cn-cm-1')"></div>
+              </div>
               </div>
             </article>
 
@@ -2923,7 +3248,7 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
             <div class="cn-fm-hero">
               <h3>Faith Moments</h3>
               <p>Share what God is doing — photos, serve days, worship nights, and group life with your church family.</p>
-              <span class="cn-fm-guidelines" onclick="showToast('Kind · Honoring · Church-safe — leaders may review posts before they reach the whole community.')">Community guidelines →</span>
+              <span class="cn-fm-guidelines" onclick="openCnGuidelinesModal()">Community guidelines →</span>
             </div>
 
             <div class="cn-stories-scroll" aria-label="Faith Moments stories">
@@ -3219,7 +3544,8 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
           <div class="jy-hero-metrics">
             <div class="jy-hero-metric"><strong>Beginning</strong><span>Journey stage</span></div>
             <div class="jy-hero-metric"><strong id="jy-journal-count">0</strong><span>Journal entries</span></div>
-            <div class="jy-hero-metric"><strong>7</strong><span>Reflection days</span></div>
+            <div class="jy-hero-metric"><strong id="jy-reflection-days">7</strong><span>Reflection days</span></div>
+            <div class="jy-hero-metric"><strong id="jy-studies-count">2</strong><span>Studies completed</span></div>
           </div>
         </div>
 
@@ -3246,6 +3572,7 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
           <button type="button" class="jy-nav-btn" onclick="scrollJourney('jy-growth')"><span data-grace-icon="impact" data-grace-size="14"></span> Growth</button>
           <button type="button" class="jy-nav-btn" onclick="scrollJourney('jy-activity')"><span data-grace-icon="star" data-grace-size="14"></span> Activity</button>
           <button type="button" class="jy-nav-btn" onclick="scrollJourney('jy-goals')"><span data-grace-icon="goals" data-grace-size="14"></span> Goals</button>
+          <button type="button" class="jy-nav-btn" onclick="scrollJourney('jy-study')"><span data-grace-icon="bible" data-grace-size="14"></span> Bible Study</button>
         </nav>
 
         <section class="jy-section" id="jy-journal">
@@ -3361,6 +3688,40 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
           </div>
         </section>
 
+
+        <section class="jy-section" id="jy-study">
+          <div class="jy-section-hdr">
+            <h2>Bible Study</h2>
+            <p>Guided paths from Scripture — connected to sermons and your journey.</p>
+          </div>
+          <div class="jy-study-banner">
+            <div><strong id="jy-study-active-title">Honor Each Other — Part 4</strong><span style="display:block;font-size:10px;color:var(--ios-muted);margin-top:4px">Continue your active study path</span></div>
+            <button type="button" class="btn dark" onclick="openProfileStudy()">Continue →</button>
+          </div>
+          <div class="card" style="margin-bottom:12px">
+            <div class="section-head" style="padding:14px 14px 0"><h3>Start a path</h3></div>
+            <div style="padding:12px 14px 14px">
+              <div class="jy-study-topics" id="jy-study-topics">
+                <button type="button" class="jy-study-chip" onclick="startJyStudy('Forgiveness')">Forgiveness</button>
+                <button type="button" class="jy-study-chip" onclick="startJyStudy('Identity in Christ')">Identity in Christ</button>
+                <button type="button" class="jy-study-chip" onclick="startJyStudy('Prayer rhythms')">Prayer rhythms</button>
+                <button type="button" class="jy-study-chip" onclick="startJyStudy('Generosity')">Generosity</button>
+              </div>
+              <div style="display:flex;gap:8px">
+                <input type="text" id="jy-study-input" placeholder="What do you want to study?" style="flex:1;border:1px solid #e8e0d5;border-radius:10px;padding:10px;font-size:12px;font-family:inherit">
+                <button type="button" class="btn dark" onclick="startJyStudyFromInput()">Start</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="section-head" style="padding:14px 14px 0"><h3>Your paths</h3></div>
+            <div style="padding:12px 14px 14px" id="jy-study-path-list">
+              <div class="jy-study-path"><strong>Honor Each Other — Part 4</strong><span style="display:block;font-size:10px;color:var(--ios-muted)">Step 2 of 5 · In progress</span></div>
+              <div class="jy-study-path"><strong>The Power of Forgiveness</strong><span style="display:block;font-size:10px;color:var(--ios-muted)">Completed · May 12</span></div>
+            </div>
+          </div>
+        </section>
+
         <section class="jy-section" id="jy-goals">
           <div class="jy-section-hdr">
             <div class="jy-section-hdr-row">
@@ -3424,6 +3785,15 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
             <input type="text" class="watch-live-input" id="watch-chat-input" placeholder="Say something…" maxlength="120" onkeydown="if(event.key==='Enter')watchSendChat()">
             <button type="button" class="watch-live-send" onclick="watchSendChat()" aria-label="Send">↑</button>
           </div>
+        </div>
+
+
+        <div class="watch-study-banner" id="watch-study-banner" role="region" aria-label="Study this sermon">
+          <div>
+            <div style="font-size:13px;font-weight:700" id="watch-study-banner-title">Study this message</div>
+            <div style="font-size:10px;color:var(--ios-muted);margin-top:2px">Continue in Bible Study — guided by Central&apos;s core beliefs</div>
+          </div>
+          <button type="button" onclick="openWatchStudy()">Open study →</button>
         </div>
 
         <div class="watch-gallery">
@@ -3565,6 +3935,10 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
             <span class="drawer-item-icon" data-drawer-icon="home"></span>
             <span>Home</span>
           </button>
+          <button type="button" class="drawer-item" data-drawer-tab="care" onclick="navigateFromDrawer('care')">
+            <span class="drawer-item-icon" data-drawer-icon="prayer"></span>
+            <span>Pastoral care</span>
+          </button>
           <button type="button" class="drawer-item" data-drawer-tab="leaders" onclick="navigateFromDrawer('leaders')">
             <span class="drawer-item-icon" data-drawer-icon="leadership"></span>
             <span>Leaders</span>
@@ -3643,6 +4017,7 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
           <div class="social-notify-summary">Groups, events, and support</div>
         </div>
         <div class="social-notify-list">
+          <button type="button" class="home-more-item" onclick="closeHomeMoreSheet();showScreen('care')"><span class="home-more-ico" data-grace-icon="prayer" data-grace-size="18"></span>Pastoral care</button>
           <button type="button" class="home-more-item" onclick="closeHomeMoreSheet();homeQuickCmd('groups')"><span class="home-more-ico" data-grace-icon="groups" data-grace-size="18"></span>Groups</button>
           <button type="button" class="home-more-item" onclick="closeHomeMoreSheet();homeQuickCmd('events')"><span class="home-more-ico" data-grace-icon="calendar" data-grace-size="18"></span>Events</button>
           <button type="button" class="home-more-item" onclick="closeHomeMoreSheet();homeQuickCmd('jesus')"><span class="home-more-ico" data-grace-icon="cross" data-grace-size="18"></span>I followed Jesus</button>
@@ -3663,10 +4038,29 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
           <div class="social-notify-summary">Send, receive, and card controls</div>
         </div>
         <div class="social-notify-list">
-          <button type="button" class="give-wallet-item" onclick="closeGiveWalletSheet();showToast('Send money — review transfer')">Send money</button>
-          <button type="button" class="give-wallet-item" onclick="closeGiveWalletSheet();showToast('Receive — share account details')">Receive</button>
+          <button type="button" class="give-wallet-item" onclick="openGiveWalletTransfer('send')">Send money</button>
+          <button type="button" class="give-wallet-item" onclick="openGiveWalletTransfer('receive')">Receive</button>
           <button type="button" class="give-wallet-item" onclick="closeGiveWalletSheet();showToast('Add money to wallet')">Add money</button>
           <button type="button" class="give-wallet-item" onclick="closeGiveWalletSheet();walletTabGive('impact');scrollGiveAnchor('gv-tx-card')">View statements &amp; activity</button>
+
+          <div class="give-wallet-panel" id="give-wallet-send-panel">
+            <label>Send to</label>
+            <input type="text" id="give-send-to" placeholder="Name or phone">
+            <label>Amount</label>
+            <input type="number" id="give-send-amt" placeholder="0.00" value="50">
+            <div class="give-wallet-panel-actions">
+              <button type="button" onclick="closeGiveWalletTransfer()">Cancel</button>
+              <button type="button" class="primary" onclick="confirmGiveWalletSend()">Send</button>
+            </div>
+          </div>
+          <div class="give-wallet-panel" id="give-wallet-receive-panel">
+            <p style="font-size:11px;color:var(--ios-muted);line-height:1.45;margin:0 0 8px">Share your GRACE account details to receive money.</p>
+            <div style="background:#f7f5f2;border-radius:10px;padding:10px;font-size:11px;font-weight:600;margin-bottom:8px">Maya Thompson · GRACE ···· 1834</div>
+            <div class="give-wallet-panel-actions">
+              <button type="button" onclick="closeGiveWalletTransfer()">Close</button>
+              <button type="button" class="primary" onclick="showToast('Account details copied')">Copy details</button>
+            </div>
+          </div>
           <div class="give-wallet-freeze">
             <div><strong>Lock card</strong><span style="display:block;font-size:10px;color:var(--ios-muted)">Block new purchases &amp; transfers</span></div>
             <label class="gv-toggle"><input type="checkbox" id="gv-freeze-toggle" onchange="toggleGiveFreeze(this)"><span class="gv-toggle-slider"></span></label>
@@ -3976,6 +4370,34 @@ body{font-family:var(--font-body),Arial,sans-serif;display:grid;place-items:cent
 
   <div class="toast" id="toast">Saved</div>
 </div>
+
+
+    <div class="cn-post-overlay" id="cn-post-overlay" onclick="if(event.target===this)closeCnPostOverlay()">
+      <div class="cn-post-modal" onclick="event.stopPropagation()">
+        <div class="section-head" style="margin-bottom:0"><h3>Create post</h3><button type="button" style="border:none;background:none;font-size:18px;cursor:pointer" onclick="closeCnPostOverlay()">×</button></div>
+        <div class="cn-pm-types">
+          <button type="button" class="cn-pm-type selected" onclick="selectCnPostType(this)">Update</button>
+          <button type="button" class="cn-pm-type" onclick="selectCnPostType(this)">Prayer Request</button>
+          <button type="button" class="cn-pm-type" onclick="selectCnPostType(this)">Blessing</button>
+          <button type="button" class="cn-pm-type" onclick="selectCnPostType(this)">Milestone</button>
+          <button type="button" class="cn-pm-type" onclick="selectCnPostType(this)">Praise</button>
+        </div>
+        <textarea class="cn-pm-text" id="cn-pm-text" placeholder="What's on your heart?"></textarea>
+        <button type="button" class="cn-pm-submit" onclick="submitCnPost()">Post to community</button>
+      </div>
+    </div>
+    <div class="guidelines-overlay" id="cn-guidelines-overlay" onclick="if(event.target===this)closeCnGuidelinesModal()">
+      <div class="guidelines-card" onclick="event.stopPropagation()">
+        <div class="guidelines-head">
+          <div class="guidelines-title">Community guidelines</div>
+          <button type="button" style="border:none;background:none;font-size:16px;cursor:pointer" onclick="closeCnGuidelinesModal()">✕</button>
+        </div>
+        <div class="guidelines-row"><span>🤍</span><div><b>Lead with grace.</b> Encourage, pray, and celebrate — keep every comment kind.</div></div>
+        <div class="guidelines-row"><span>🔒</span><div><b>Respect privacy.</b> Get a yes before tagging or posting photos of others.</div></div>
+        <div class="guidelines-row"><span>🙏</span><div><b>Hold prayers in confidence.</b> What's shared stays in the church family.</div></div>
+        <div class="guidelines-row"><span>🚩</span><div><b>Flag, don't fight.</b> Report it and a leader will follow up.</div></div>
+      </div>
+    </div>
 
 <script src="grace-impact-metrics.js"></script>
 <script src="grace-duotone-icons.js"></script>
@@ -5397,7 +5819,8 @@ function revealGraceCvv(e) {
 }
 
 function toggleGiveFreeze(input) {
-  showToast(input.checked ? 'Card locked — purchases blocked' : 'Card unlocked');
+  gvCardFrozen = !!input.checked;
+  showToast(gvCardFrozen ? 'Card locked — purchases blocked' : 'Card unlocked');
 }
 
 function filterGiveCauses(cat, btn) {
@@ -5947,6 +6370,13 @@ function hydrateMetrics() {
   if (document.getElementById('gv-panel-impact')?.classList.contains('active')) {
     queueImpactAllocationAnimation();
   }
+  setMetric('hero-direct-gifts', formatMoney(m.givenMonth || 230).replace('.00', ''));
+  var homeWal = document.getElementById('home-wallet-available');
+  if (homeWal) homeWal.textContent = formatMoney(m.walletAvailable || 3240).replace('.00', '').replace('$', '');
+  var homeDelta = document.getElementById('home-wallet-delta');
+  if (homeDelta) homeDelta.textContent = '↑ ' + formatMoney(m.graceImpact.month) + ' Card impact · May';
+  renderHomeImpactSummary();
+  syncHomePillars();
 }
 
 function wireGiveFlow() {
@@ -6045,8 +6475,234 @@ document.addEventListener('keydown', function (e) {
     closeFaithMomentCreate();
     closeStoryViewer();
     closeSocialNotifications();
+    closeCnPostOverlay();
+    closeCnGuidelinesModal();
+    closeGiveWalletTransfer();
   }
 });
+
+
+/* === Desktop parity helpers === */
+var GV_ALLOC_COLORS = ['#EE2B37','#000000','#7c3aed','#16a34a','#0891b2'];
+var gvActiveMerchant = { store: 'Walmart', cause: 'Food Pantry', pct: 2.0 };
+var gvCardFrozen = false;
+var cnSelectedPostType = 'Update';
+var CN_POST_TYPE_MAP = {
+  'Update': { type: 'update', badge: '', badgeTxt: '' },
+  'Prayer Request': { type: 'prayer', badge: 'cn-pb-prayer', badgeTxt: '🙏 Prayer Request' },
+  'Blessing': { type: 'blessings', badge: 'cn-pb-blessing', badgeTxt: '📖 Blessing' },
+  'Milestone': { type: 'milestones', badge: 'cn-pb-milestone', badgeTxt: '🏅 Milestone' },
+  'Praise': { type: 'blessings', badge: 'cn-pb-blessing', badgeTxt: '🙌 Praise Report' }
+};
+var cnFeedFilter = 'all';
+var reflectionDaysCount = 7;
+
+function submitCareRequest(label) {
+  showToast(label + ' request submitted — a leader will follow up');
+}
+
+function syncHomePillars() {
+  if (typeof GRACE_METRICS === 'undefined') return;
+  var m = GRACE_METRICS;
+  var set = function(id, val) { var el = document.getElementById(id); if (el) el.textContent = val; };
+  set('dash-journey-badge', reflectionDaysCount + ' reflection days');
+  set('dash-pillar-impact-badge', formatMoney(m.graceImpact.month) + ' · May');
+  set('dash-pillar-giving-badge', formatMoney(m.givenMonth || 230).replace('.00', '') + ' · May');
+  set('dash-pillar-care-badge', '24/7 available');
+  set('dash-pillar-connect-badge', '5 updates');
+  set('jy-reflection-days', String(reflectionDaysCount));
+}
+
+function renderHomeImpactSummary() {
+  var root = document.getElementById('home-gi-alloc-list');
+  if (!root || typeof GRACE_METRICS === 'undefined') return;
+  var m = GRACE_METRICS;
+  var total = m.graceImpact.month;
+  var set = function(id, val) { var el = document.getElementById(id); if (el) el.textContent = val; };
+  set('home-gi-total', formatMoney(total));
+  set('home-gi-lives', String(m.livesImpacted.month));
+  set('home-gi-partner', m.commitment.level + ' · ' + m.commitment.pct + '% · Giving goal progress');
+  root.innerHTML = (m.allocation || []).map(function(item, i) {
+    var pct = item.pct;
+    var amt = total * pct / 100;
+    var color = GV_ALLOC_COLORS[i] || '#888';
+    return '<div class="home-gi-alloc-row"><div class="home-gi-alloc-dot" style="background:' + color + '"></div><div class="home-gi-alloc-body"><div class="home-gi-alloc-top"><span>' + item.cause + '</span><span>' + pct + '% · ' + formatMoney(amt) + '</span></div><div class="home-gi-alloc-bar"><div class="home-gi-alloc-fill" style="width:' + Math.min(100, pct * 2) + '%;background:' + color + '"></div></div></div></div>';
+  }).join('');
+}
+
+var resHeroIndex = 0;
+var resHeroTimer = null;
+function resHeroGo(i) {
+  var slides = document.querySelectorAll('#res-hero .res-hero-slide');
+  var dots = document.querySelectorAll('#res-hero-dots .res-hero-dot');
+  var cap = document.getElementById('res-hero-caption');
+  if (!slides.length) return;
+  resHeroIndex = ((i % slides.length) + slides.length) % slides.length;
+  slides.forEach(function(s, n) { s.classList.toggle('active', n === resHeroIndex); });
+  dots.forEach(function(d, n) { d.classList.toggle('active', n === resHeroIndex); });
+  if (cap && slides[resHeroIndex]) cap.textContent = slides[resHeroIndex].dataset.caption || '';
+}
+function initResHeroSlider() {
+  var hero = document.getElementById('res-hero');
+  if (!hero || hero.dataset.sliderInit) return;
+  hero.dataset.sliderInit = '1';
+  resHeroGo(0);
+  if (resHeroTimer) clearInterval(resHeroTimer);
+  resHeroTimer = setInterval(function() { resHeroGo(resHeroIndex + 1); }, 5500);
+}
+
+function toggleGvAllocEdit() {
+  var el = document.getElementById('gv-cause-edit');
+  if (!el) return;
+  var show = el.style.display === 'none' || !el.style.display;
+  el.style.display = show ? 'block' : 'none';
+  if (show && typeof GRACE_METRICS !== 'undefined') {
+    (GRACE_METRICS.allocation || []).forEach(function(row, i) {
+      var slider = document.querySelectorAll('#gv-cause-edit .gv-cs-slider')[i];
+      var pctEl = document.getElementById('gv-cs-' + i);
+      if (slider) slider.value = row.pct;
+      if (pctEl) pctEl.textContent = row.pct + '%';
+    });
+  }
+}
+function gvUpdateAlloc(slider, idx) {
+  var el = document.getElementById('gv-cs-' + idx);
+  if (el) el.textContent = slider.value + '%';
+}
+function gvSaveAlloc() {
+  if (typeof GRACE_METRICS === 'undefined') return;
+  document.querySelectorAll('#gv-cause-edit .gv-cs-slider').forEach(function(slider, i) {
+    if (GRACE_METRICS.allocation[i]) GRACE_METRICS.allocation[i].pct = parseInt(slider.value, 10) || 0;
+  });
+  resetImpactAllocationAnimation();
+  renderAllocationDonut(GRACE_METRICS.allocation);
+  renderAllocation(GRACE_METRICS.allocation);
+  renderHomeImpactSummary();
+  showToast('Cause allocation saved');
+  document.getElementById('gv-cause-edit').style.display = 'none';
+}
+
+function gvOpenCalc(el, store, cause, pct) {
+  document.querySelectorAll('.gv-mc, .gv-mc-compact').forEach(function(m) { m.classList.remove('gv-mc-active'); });
+  if (el) el.classList.add('gv-mc-active');
+  gvActiveMerchant = { store: store, cause: cause, pct: pct };
+  var calc = document.getElementById('gv-pf-calc');
+  var title = document.getElementById('gv-calc-title');
+  if (calc) calc.classList.add('show');
+  if (title) title.textContent = store + ' → ' + cause;
+  gvCalcContrib();
+}
+function gvCalcContrib() {
+  var inp = document.getElementById('gv-calc-input');
+  var res = document.getElementById('gv-calc-result');
+  if (!inp || !res) return;
+  var amt = parseFloat(inp.value) || 0;
+  res.textContent = '$' + (amt * gvActiveMerchant.pct / 100).toFixed(2);
+}
+function gvSimPurchase() {
+  var inp = document.getElementById('gv-calc-input');
+  var amt = parseFloat(inp && inp.value) || 120;
+  var contrib = parseFloat((amt * gvActiveMerchant.pct / 100).toFixed(2));
+  if (typeof GRACE_METRICS !== 'undefined') {
+    GRACE_METRICS.graceImpact.month = Number((GRACE_METRICS.graceImpact.month + contrib).toFixed(2));
+    hydrateMetrics();
+  }
+  showToast(gvActiveMerchant.store + ': +' + formatMoney(contrib) + ' → ' + gvActiveMerchant.cause);
+}
+
+function openGiveWalletTransfer(mode) {
+  document.getElementById('give-wallet-send-panel')?.classList.toggle('open', mode === 'send');
+  document.getElementById('give-wallet-receive-panel')?.classList.toggle('open', mode === 'receive');
+}
+function closeGiveWalletTransfer() {
+  document.getElementById('give-wallet-send-panel')?.classList.remove('open');
+  document.getElementById('give-wallet-receive-panel')?.classList.remove('open');
+}
+function confirmGiveWalletSend() {
+  var to = document.getElementById('give-send-to')?.value || 'recipient';
+  var amt = document.getElementById('give-send-amt')?.value || '0';
+  closeGiveWalletTransfer();
+  showToast('Sent $' + amt + ' to ' + to);
+}
+
+function openCnPostOverlay(preset) {
+  document.getElementById('cn-post-overlay')?.classList.add('open');
+  if (preset) {
+    document.querySelectorAll('.cn-pm-type').forEach(function(t) {
+      if (t.textContent.toLowerCase().indexOf(preset.toLowerCase()) >= 0) selectCnPostType(t);
+    });
+  }
+  setTimeout(function() { document.getElementById('cn-pm-text')?.focus(); }, 100);
+}
+function closeCnPostOverlay() { document.getElementById('cn-post-overlay')?.classList.remove('open'); }
+function selectCnPostType(el) {
+  document.querySelectorAll('.cn-pm-type').forEach(function(t) { t.classList.remove('selected'); });
+  el.classList.add('selected');
+  cnSelectedPostType = el.textContent.trim();
+}
+function submitCnPost() {
+  var txt = document.getElementById('cn-pm-text')?.value?.trim();
+  if (!txt) return;
+  var feed = document.getElementById('cn-feed');
+  if (!feed) return;
+  var map = CN_POST_TYPE_MAP[cnSelectedPostType] || CN_POST_TYPE_MAP['Update'];
+  var badge = map.badge ? '<div class="cn-post-badge ' + map.badge + '">' + map.badgeTxt + '</div>' : '';
+  var article = document.createElement('article');
+  article.className = 'cn-post';
+  article.dataset.type = map.type;
+  article.innerHTML = '<div class="cn-post-head"><img class="cn-post-av" src="https://randomuser.me/api/portraits/women/42.jpg" alt=""><div style="flex:1"><div class="cn-post-name">Maya Thompson</div><div class="cn-post-role">Member</div></div><div class="cn-post-time">Just now</div></div>' + badge + '<div class="cn-post-body">' + txt + '</div><div class="cn-post-actions"><button type="button" class="cn-pact">🙏 0 Pray</button><button type="button" class="cn-pact">💬 Comment</button></div>';
+  feed.insertBefore(article, feed.firstChild);
+  closeCnPostOverlay();
+  document.getElementById('cn-pm-text').value = '';
+  showToast('Posted to the community feed');
+}
+function cnToggleComment(id) {
+  document.getElementById(id)?.classList.toggle('open');
+}
+function cnAddComment(input, areaId) {
+  var txt = input.value.trim();
+  if (!txt) return;
+  var area = document.getElementById(areaId);
+  if (!area) return;
+  var row = document.createElement('div');
+  row.className = 'cn-comment-item';
+  row.innerHTML = '<img class="cn-comment-av" src="https://randomuser.me/api/portraits/women/42.jpg" alt=""><div><strong>Maya Thompson</strong> ' + txt + '</div>';
+  var inputRow = area.querySelector('.cn-comment-row');
+  area.insertBefore(row, inputRow);
+  input.value = '';
+}
+function openCnGuidelinesModal() { document.getElementById('cn-guidelines-overlay')?.classList.add('open'); }
+function closeCnGuidelinesModal() { document.getElementById('cn-guidelines-overlay')?.classList.remove('open'); }
+
+function openProfileStudy() {
+  showScreen('profile');
+  setTimeout(function() { scrollJourney('jy-study'); }, 120);
+  showToast('Continuing Bible Study path');
+}
+function openWatchStudy() {
+  closePush(true);
+  openProfileStudy();
+}
+function startJyStudy(topic) {
+  showToast('Starting study: ' + topic);
+  var list = document.getElementById('jy-study-path-list');
+  if (list) {
+    var row = document.createElement('div');
+    row.className = 'jy-study-path';
+    row.innerHTML = '<strong>' + topic + '</strong><span style="display:block;font-size:10px;color:var(--ios-muted)">Just started</span>';
+    list.insertBefore(row, list.firstChild);
+  }
+  var count = document.getElementById('jy-studies-count');
+  if (count) count.textContent = String((parseInt(count.textContent, 10) || 0) + 1);
+}
+function startJyStudyFromInput() {
+  var inp = document.getElementById('jy-study-input');
+  var topic = inp && inp.value.trim();
+  if (!topic) { showToast('Enter a study topic'); return; }
+  startJyStudy(topic);
+  if (inp) inp.value = '';
+}
+
 
 if (typeof hydrateGraceIcons === 'function') hydrateGraceIcons(document);
 if (typeof initGraceAllIcons === 'function') initGraceAllIcons(document);
@@ -6059,6 +6715,9 @@ initSocialNotifications();
 startSocialNotificationDemo();
 hydrateMetrics();
 wireGiveFlow();
+initResHeroSlider();
+renderHomeImpactSummary();
+syncHomePillars();
 </script>
 </body>
 </html>
